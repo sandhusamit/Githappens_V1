@@ -1,0 +1,154 @@
+/* ========================================================
+   DEVLOG CARD
+======================================================== */
+
+.gh-devlog-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  padding: 1.6rem;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(103, 217, 255, 0.08),
+      transparent 36%),
+    rgba(5, 10, 22, 0.94);
+
+  border: 1px solid rgba(103, 217, 255, 0.12);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.42),
+    0 0 22px rgba(103, 217, 255, 0.05);
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.gh-devlog-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(103, 217, 255, 0.35);
+
+  box-shadow:
+    0 28px 65px rgba(0, 0, 0, 0.52),
+    0 0 30px rgba(103, 217, 255, 0.14);
+}
+
+.gh-devlog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.gh-devlog-top span {
+  color: #7dff72;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+}
+
+.gh-devlog-top small {
+  color: #7e92b8;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.gh-devlog-card h2 {
+  color: #ffffff;
+
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 850;
+
+  line-height: 1.15;
+
+  margin-bottom: 1rem;
+}
+
+.gh-devlog-card p {
+  color: #d7e4ff;
+
+  font-size: 0.98rem;
+  line-height: 1.8;
+
+  margin-bottom: 1.4rem;
+}
+
+.gh-devlog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.gh-devlog-meta span {
+  padding: 0.5rem 0.75rem;
+
+  border-radius: 999px;
+
+  background: rgba(103, 217, 255, 0.08);
+  border: 1px solid rgba(103, 217, 255, 0.16);
+
+  color: #b9dfff;
+
+  font-size: 0.72rem;
+  font-weight: 850;
+
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.gh-devlog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+
+  margin-top: auto;
+}
+
+.gh-devlog-tags span {
+  padding: 0.55rem 0.8rem;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #eef4ff;
+
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.gh-devlog-footer {
+  margin-top: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--accent);
+
+  font-size: 0.82rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}

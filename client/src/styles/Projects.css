@@ -1,0 +1,355 @@
+/* ========================================================
+   PROJECTS PAGE
+======================================================== */
+
+.gh-projects-page {
+  width: 100%;
+}
+
+/* ========================================================
+   HERO
+======================================================== */
+
+.gh-projects-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding:
+    clamp(2rem, 5vw, 4rem)
+    clamp(1.5rem, 4vw, 4rem);
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(103, 217, 255, 0.12),
+      transparent 34%
+    ),
+    rgba(5, 12, 25, 0.76);
+
+  border: 1px solid rgba(103, 217, 255, 0.16);
+
+  box-shadow:
+    0 0 36px rgba(103, 217, 255, 0.06),
+    0 24px 70px rgba(0, 0, 0, 0.36);
+
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+  margin-top: clamp(1.8rem, 4vw, 3rem);
+}
+
+.gh-projects-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.04),
+      transparent 36%
+    );
+}
+
+/* ========================================================
+   HERO TYPOGRAPHY
+======================================================== */
+
+.gh-projects-kicker {
+  position: relative;
+  z-index: 2;
+
+  color: #34f334;
+
+  font-size: 0.88rem;
+  font-weight: 550;
+
+  text-transform: uppercase;
+  letter-spacing: 0.24rem;
+
+  margin-bottom: 0.9rem;
+
+  text-shadow:
+    0 0 18px rgba(52, 243, 52, 0.34),
+    0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.gh-projects-hero h1 {
+  position: relative;
+  z-index: 2;
+
+  color: #ffffff;
+
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 550;
+
+  letter-spacing: -0.12rem;
+  line-height: 0.95;
+
+  margin-bottom: 1rem;
+
+  text-shadow:
+    0 0 24px rgba(52, 243, 52, 0.16),
+    0 4px 18px rgba(0, 0, 0, 0.9);
+}
+
+.gh-projects-hero p:last-child {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+
+  color: #d4e3ff;
+
+  font-size: clamp(1.25rem, 1.3vw, 1.45rem);
+  line-height: 1.85;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+/* ========================================================
+   PROJECT GRID
+======================================================== */
+
+.gh-projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* ========================================================
+   PROJECT CARD
+======================================================== */
+
+.gh-project-card {
+  position: relative;
+
+  min-height: 330px;
+  padding: clamp(1.2rem, 2vw, 1.6rem);
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.025)
+    ),
+    rgba(5, 12, 25, 0.74);
+
+  border: 1px solid rgba(103, 217, 255, 0.14);
+
+  box-shadow:
+    inset 0 0 18px rgba(103, 217, 255, 0.025),
+    0 14px 38px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.24s ease,
+    border-color 0.24s ease,
+    background 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.gh-project-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.04),
+      transparent 36%
+    );
+}
+
+.gh-project-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(103, 217, 255, 0.45);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(83, 212, 255, 0.08),
+      rgba(255, 255, 255, 0.03)
+    ),
+    rgba(5, 12, 25, 0.82);
+
+  box-shadow:
+    0 0 28px rgba(59, 206, 255, 0.16),
+    0 20px 48px rgba(0, 0, 0, 0.38);
+
+    .gh-project-footer {
+      color: rgba(60, 245, 91, 0.42);
+    }
+}
+
+/* ========================================================
+   CARD TOP
+======================================================== */
+
+.gh-project-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-bottom: 1.4rem;
+}
+
+.gh-project-top span {
+  color: #2cff72;
+
+  font-size: 1.22rem;
+  font-weight: 850;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.gh-project-top small {
+  color: #9fb2d7;
+
+  font-size: 1.02rem;
+  font-weight: 800;
+
+  text-align: right;
+}
+
+/* ========================================================
+   CARD TYPOGRAPHY
+======================================================== */
+
+.gh-project-card h2 {
+  position: relative;
+  z-index: 2;
+
+  color: #ffffff;
+
+  font-size: clamp(1.6rem, 2.2vw, 2.25rem);
+  font-weight: 700;
+
+  margin-bottom: 0.98rem;
+
+  text-shadow:
+    0 0 18px rgba(103, 217, 255, 0.12),
+    0 3px 14px rgba(0, 0, 0, 0.8);
+}
+
+.gh-project-card p {
+  position: relative;
+  z-index: 2;
+
+  color: #d4e3ff;
+
+  font-size: 1.06rem;
+  line-height: 1.8;
+
+  margin-bottom: 1.4rem;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================================
+   STACK TAGS
+======================================================== */
+
+.gh-stack-row {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+
+  margin-top: auto;
+  margin-bottom: 1.3rem;
+}
+
+.gh-stack-row span {
+  padding: 0.45rem 0.7rem;
+
+  border-radius: 999px;
+
+  color: #dff7ff;
+
+  background: rgba(103, 217, 255, 0.08);
+  border: 1px solid rgba(103, 217, 255, 0.22);
+
+  font-size: 0.92rem;
+  font-weight: 550;
+
+  letter-spacing: 0.07rem;
+
+}
+
+/* ========================================================
+   CARD FOOTER
+======================================================== */
+
+.gh-project-footer {
+  position: relative;
+  z-index: 2;
+
+  padding-top: 1rem;
+
+  border-top: 1px solid rgba(103, 217, 255, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: rgba(103, 217, 255, 0.22);
+
+  font-size: 0.76rem;
+  font-weight: 950;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+/* ========================================================
+   RESPONSIVE
+======================================================== */
+
+@media (max-width: 700px) {
+  .gh-projects-hero {
+    border-radius: 22px;
+  }
+
+  .gh-project-card {
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .gh-project-top {
+    flex-direction: column;
+  }
+
+  .gh-project-top small {
+    text-align: left;
+  }
+  
+}
+@media (max-width: 900px) {
+  .gh-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

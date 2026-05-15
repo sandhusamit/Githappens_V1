@@ -1,0 +1,266 @@
+.gh-login-page {
+  min-height: calc(100vh - var(--navbar-height));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+/* ========================================================
+   LOGIN CARD
+======================================================== */
+
+.gh-login-card {
+  width: min(100%, 620px);
+
+  padding: 3rem;
+
+  border-radius: 34px;
+
+  background:
+    radial-gradient(circle at top left, rgba(103, 217, 255, 0.14), transparent 38%),
+    rgba(5, 12, 25, 0.82);
+
+  border: 1px solid rgba(103, 217, 255, 0.2);
+
+  box-shadow:
+    0 0 44px rgba(103, 217, 255, 0.1),
+    0 30px 90px rgba(0, 0, 0, 0.52);
+
+  backdrop-filter: blur(22px);
+}
+
+/* ========================================================
+   BRAND
+======================================================== */
+
+.gh-login-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.gh-login-brand img {
+  width: 82px;
+  height: 82px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 0 18px rgba(103, 217, 255, 0.34));
+}
+
+.gh-login-brand p {
+  color: #5631fc;
+
+  font-size: 0.92rem;
+  font-weight: 950;
+
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+
+.gh-login-brand h1 {
+  color: #ffffff;
+
+  font-size: clamp(2.6rem, 4vw, 3.3rem);
+  line-height: 1;
+
+  margin-top: 0.45rem;
+
+  font-weight: 950;
+}
+
+/* ========================================================
+   SUBTITLE
+======================================================== */
+
+.gh-login-subtitle {
+  color: #dce9ff;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+
+  margin-bottom: 2.2rem;
+
+  max-width: 90%;
+}
+
+/* ========================================================
+   FORM
+======================================================== */
+
+.gh-login-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.4rem;
+}
+
+.gh-login-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.7rem;
+
+  color: #eef4ff;
+
+  font-size: 1rem;
+  font-weight: 850;
+
+  letter-spacing: 0.05rem;
+}
+
+/* ========================================================
+   INPUTS
+======================================================== */
+
+.gh-login-form input {
+  min-height: 64px;
+
+  padding: 0 1.25rem;
+
+  border-radius: 18px;
+
+  background: rgba(3, 10, 20, 0.78);
+
+  border: 1px solid rgba(103, 217, 255, 0.2);
+
+  color: #ffffff;
+
+  font-size: 1.02rem;
+  font-weight: 600;
+
+  outline: none;
+
+  transition:
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+.gh-login-form input::placeholder {
+  color: rgba(184, 199, 230, 0.62);
+
+  font-size: 0.98rem;
+}
+
+.gh-login-form input:focus {
+  border-color: rgba(103, 217, 255, 0.7);
+
+  box-shadow:
+    0 0 24px rgba(103, 217, 255, 0.22);
+
+  transform: translateY(-1px);
+}
+
+/* ========================================================
+   BUTTON
+======================================================== */
+
+.gh-login-btn {
+  min-height: 64px;
+
+  margin-top: 0.8rem;
+
+  border-radius: 18px;
+
+  color: #273f5f;
+
+  background: var(--accent);
+
+  border: 1px solid rgba(103, 217, 255, 0.75);
+
+  font-size: 0.96rem;
+  font-weight: 950;
+
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+
+  box-shadow:
+    0 0 28px rgba(103, 217, 255, 0.26);
+}
+
+.gh-login-btn:hover {
+  transform: translateY(-3px);
+  color:  rgba(103, 217, 255, 0.75);
+
+  box-shadow:
+    0 0 40px rgba(103, 217, 255, 0.45);
+}
+
+/* ========================================================
+   FOOTER
+======================================================== */
+
+.gh-login-footer {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.gh-login-footer a {
+  color:  #273f5f;
+
+  font-size: 0.96rem;
+  font-weight: 700;
+
+  transition: color 0.22s ease;
+}
+
+.gh-login-footer a:hover {
+  color: rgba(103, 217, 255, 0.75);
+}
+
+/* ========================================================
+   MOBILE
+======================================================== */
+
+@media (max-width: 560px) {
+  .gh-login-page {
+    padding: 1rem;
+  }
+
+  .gh-login-card {
+    padding: 2rem;
+    border-radius: 24px;
+  }
+
+  .gh-login-brand {
+    gap: 1rem;
+  }
+
+  .gh-login-brand img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .gh-login-brand h1 {
+    font-size: 2.1rem;
+  }
+
+  .gh-login-subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .gh-login-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,164 @@
+/* ========================================================
+   DETAIL CARD
+======================================================== */
+
+.gh-devlog-detail-card {
+  padding: clamp(1.6rem, 4vw, 3rem);
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(103, 217, 255, 0.1),
+      transparent 34%),
+    rgba(5, 10, 22, 0.95);
+
+  border: 1px solid rgba(103, 217, 255, 0.14);
+
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.5),
+    0 0 28px rgba(103, 217, 255, 0.08);
+}
+
+.gh-devlog-detail-header {
+  margin-bottom: 2.5rem;
+}
+
+.gh-devlog-detail-header h1 {
+  color: #ffffff;
+
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+
+  line-height: 0.95;
+
+  margin-bottom: 1.4rem;
+}
+
+.gh-devlog-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.gh-devlog-detail-meta span {
+  padding: 0.65rem 0.9rem;
+
+  border-radius: 999px;
+
+  background: rgba(103, 217, 255, 0.08);
+  border: 1px solid rgba(103, 217, 255, 0.18);
+
+  color: #d7f1ff;
+
+  font-size: 0.78rem;
+  font-weight: 850;
+
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.gh-devlog-detail-card section {
+  margin-bottom: 2.2rem;
+}
+
+.gh-devlog-detail-card h2 {
+  color: #ffffff;
+
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-weight: 850;
+
+  margin-bottom: 1rem;
+}
+
+.gh-devlog-detail-card p,
+.gh-devlog-detail-card li {
+  color: #d8e5ff;
+
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.gh-devlog-detail-card ul {
+  padding-left: 1.4rem;
+}
+
+.gh-devlog-detail-card li {
+  margin-bottom: 0.65rem;
+}
+
+.gh-devlog-pattern {
+  margin-bottom: 1.4rem;
+
+  padding: 1.2rem;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(103, 217, 255, 0.12);
+}
+
+.gh-devlog-pattern h3 {
+  color: #ffffff;
+
+  margin-bottom: 0.7rem;
+
+  font-size: 1.1rem;
+}
+
+.gh-devlog-pattern pre {
+  margin-top: 1rem;
+
+  padding: 1rem;
+
+  overflow-x: auto;
+
+  border-radius: 14px;
+
+  background: #020611;
+
+  border: 1px solid rgba(103, 217, 255, 0.08);
+}
+
+.gh-devlog-pattern code {
+  color: #7dff72;
+
+  font-family:
+    Consolas,
+    monospace;
+
+  font-size: 0.9rem;
+}
+
+.gh-devlog-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gh-devlog-links a {
+  padding: 0.75rem 1rem;
+
+  border-radius: 12px;
+
+  background: rgba(103, 217, 255, 0.08);
+  border: 1px solid rgba(103, 217, 255, 0.18);
+
+  color: #dff6ff;
+
+  font-size: 0.82rem;
+  font-weight: 850;
+
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+
+  transition: 0.2s ease;
+}
+
+.gh-devlog-links a:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(103, 217, 255, 0.42);
+
+  box-shadow: 0 0 20px rgba(103, 217, 255, 0.16);
+}

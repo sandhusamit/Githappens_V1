@@ -1,0 +1,27 @@
+/* ========================================================
+   LOG VIEW
+======================================================== */
+
+.gh-devlog-back {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  color: #d8e8ff;
+
+  font-size: 0.86rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+
+  transition: 0.2s ease;
+}
+
+.gh-devlog-back:hover {
+  color: var(--accent);
+
+  transform: translateX(-2px);
+}

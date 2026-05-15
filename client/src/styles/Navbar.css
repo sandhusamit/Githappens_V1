@@ -1,0 +1,158 @@
+.gh-navbar-wrap {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100% - calc(var(--site-gutter) * 2), var(--site-width));
+  z-index: 9999;
+}
+
+.gh-navbar {
+  width: 100%;
+  min-height: 82px;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+
+  border-radius: 22px;
+  background: rgba(5, 10, 22, 0.84);
+  border: 1px solid rgba(103, 217, 255, 0.16);
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(103, 217, 255, 0.08);
+}
+
+.gh-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: max-content;
+}
+
+.gh-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(103, 217, 255, 0.24));
+}
+
+.gh-brand-text {
+  color: #ffffff;
+  font-size: clamp(1.25rem, 1.6vw, 1.55rem);
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+.gh-navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.gh-navbar-links a {
+  color: #c8d7f2;
+  font-size: clamp(0.88rem, 0.9vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.gh-navbar-links a:hover {
+  color: #67d9ff;
+  text-shadow: 0 0 12px rgba(103, 217, 255, 0.45);
+  font-size: clamp(0.9rem, 1vw, 1.55rem);
+}
+
+.gh-navbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+
+.gh-nav-btn {
+  min-height: 40px;
+  padding: 0.65rem 0.95rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  color: #dff7ff;
+  background: rgba(103, 217, 255, 0.1);
+  border: 1px solid rgba(103, 217, 255, 0.36);
+
+  font-size: clamp(0.72rem, 0.85vw, 0.9rem);
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  box-shadow: 0 0 16px rgba(103, 217, 255, 0.1);
+  transition: 0.22s ease;
+}
+
+.gh-nav-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(103, 217, 255, 0.18);
+  box-shadow: 0 0 24px rgba(103, 217, 255, 0.24);
+}
+
+.gh-admin-btn {
+  color: #7dff72;
+  border-color: rgba(125, 255, 114, 0.35);
+  background: rgba(125, 255, 114, 0.08);
+}
+
+@media (max-width: 1100px) {
+  .gh-navbar {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .gh-brand,
+  .gh-navbar-actions {
+    justify-self: center;
+  }
+
+  .gh-navbar-links,
+  .gh-navbar-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .gh-navbar-wrap {
+    top: 10px;
+    width: calc(100% - 16px);
+  }
+
+  .gh-navbar {
+    border-radius: 18px;
+  }
+
+  .gh-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gh-navbar-links {
+    gap: 0.8rem;
+  }
+
+  .gh-nav-btn {
+    width: 100%;
+  }
+}
