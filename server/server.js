@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
 import { app } from "./middleware/express.js";
 import { connectDB } from "./config/db.js";
-
+import path from "path";
+import { fileURLToPath } from "url";
 import userRoutes from "./routes/userRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import testRoutes from "./routes/testRoutes.js";
@@ -16,6 +17,19 @@ dotenv.config({
 
 app.get("/", (req, res) => {
   res.status(200).send("Githappens API is running...");
+});
+
+
+// ================= EXPRESS VITE ================ 
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "../client/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 
 /* ================= ROUTES ================= */
