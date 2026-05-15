@@ -194,110 +194,79 @@
   }
 }
 
-/* ========================================================
-   MOBILE NAVBAR
-======================================================== */
-
 @media (max-width: 768px) {
   .gh-navbar-wrap {
-    top: 8px;
-    width: calc(100% - 12px);
+    top: 6px;
+    width: calc(100% - 10px);
   }
 
   .gh-navbar {
     min-height: unset;
 
-    padding: 0.65rem 0.9rem;
-
-    border-radius: 16px;
+    padding: 0.55rem 0.7rem;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     gap: 0.55rem;
+
+    border-radius: 14px;
   }
 
   .gh-brand {
-    gap: 0.45rem;
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 0.4rem;
   }
 
   .gh-logo {
-    width: 52px;
-    height: 52px;
+    width: 40px;
+    height: 40px;
   }
 
   .gh-brand-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .gh-navbar-links {
     width: 100%;
 
+    display: flex;
     flex-wrap: wrap;
-
-    gap: 0.55rem;
-
     justify-content: center;
+
+    gap: 0.45rem 0.8rem;
   }
 
   .gh-navbar-links a {
-    font-size: 0.7rem;
+    font-size: 0.58rem;
 
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.06rem;
   }
 
   .gh-navbar-actions {
     width: 100%;
 
+    display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
 
-    gap: 0.45rem;
-  }
-
-  .gh-nav-btn {
-    min-height: 32px;
-
-    padding: 0.45rem 0.7rem;
-
-    font-size: 0.62rem;
-
-    border-radius: 10px;
-  }
-}
-
-/* ========================================================
-   EXTRA SMALL PHONES
-======================================================== */
-
-@media (max-width: 480px) {
-  .gh-navbar {
-    padding: 0.55rem 0.7rem;
-  }
-
-  .gh-logo {
-    width: 44px;
-    height: 44px;
-  }
-
-  .gh-brand-text {
-    font-size: 0.92rem;
-  }
-
-  .gh-navbar-links {
     gap: 0.4rem;
   }
 
-  .gh-navbar-links a {
-    font-size: 0.62rem;
-  }
-
   .gh-nav-btn {
-    min-height: 28px;
+    min-height: 26px;
 
-    padding: 0.38rem 0.58rem;
+    padding: 0.32rem 0.52rem;
 
-    font-size: 0.56rem;
+    border-radius: 8px;
+
+    font-size: 0.52rem;
+
+    letter-spacing: 0.04rem;
   }
 }
