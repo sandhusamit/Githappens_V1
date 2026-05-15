@@ -193,3 +193,111 @@
     text-align: center;
   }
 }
+
+/* ========================================================
+   MOBILE NAVBAR
+======================================================== */
+
+@media (max-width: 768px) {
+  .gh-navbar-wrap {
+    top: 8px;
+    width: calc(100% - 12px);
+  }
+
+  .gh-navbar {
+    min-height: unset;
+
+    padding: 0.65rem 0.9rem;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.55rem;
+  }
+
+  .gh-brand {
+    gap: 0.45rem;
+  }
+
+  .gh-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .gh-brand-text {
+    font-size: 1rem;
+  }
+
+  .gh-navbar-links {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    gap: 0.55rem;
+
+    justify-content: center;
+  }
+
+  .gh-navbar-links a {
+    font-size: 0.7rem;
+
+    letter-spacing: 0.08rem;
+  }
+
+  .gh-navbar-actions {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 0.45rem;
+  }
+
+  .gh-nav-btn {
+    min-height: 32px;
+
+    padding: 0.45rem 0.7rem;
+
+    font-size: 0.62rem;
+
+    border-radius: 10px;
+  }
+}
+
+/* ========================================================
+   EXTRA SMALL PHONES
+======================================================== */
+
+@media (max-width: 480px) {
+  .gh-navbar {
+    padding: 0.55rem 0.7rem;
+  }
+
+  .gh-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .gh-brand-text {
+    font-size: 0.92rem;
+  }
+
+  .gh-navbar-links {
+    gap: 0.4rem;
+  }
+
+  .gh-navbar-links a {
+    font-size: 0.62rem;
+  }
+
+  .gh-nav-btn {
+    min-height: 28px;
+
+    padding: 0.38rem 0.58rem;
+
+    font-size: 0.56rem;
+  }
+}
